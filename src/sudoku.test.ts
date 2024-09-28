@@ -2,7 +2,7 @@ import { Sudoku, SudokuZkApp } from './sudoku';
 import { cloneSudoku, generateSudoku, solveSudoku } from './sudoku-lib';
 import { PrivateKey, PublicKey, Mina, AccountUpdate } from 'o1js';
 
-describe('sudoku', () => {
+describe.skip('sudoku', () => {
   let zkApp: SudokuZkApp,
     zkAppPrivateKey: PrivateKey,
     zkAppAddress: PublicKey,

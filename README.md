@@ -1,26 +1,20 @@
-# Mina zkApp: Sudoku
-
-This template uses TypeScript.
-
-## How to build
+Created using
 
 ```sh
-npm run build
+npm install -g zkapp-cli
+zk example
+> sudoku
 ```
 
-## How to run tests
+Then, turned into a ZkProgram, following [the docs](https://docs.minaprotocol.com/zkapps/o1js/recursion#example-recursively-verify-a-simple-program-in-a-zkapp)
+
+see how to use in [sudokuProgram.test.ts](./src/sudokuProgram.test.ts)
+
+Run tests with
 
 ```sh
 npm run test
-npm run testw # watch mode
 ```
 
-## How to run coverage
-
-```sh
-npm run coverage
-```
-
-## License
-
-[Apache-2.0](LICENSE)
+**_Note_**  
+There is a `proofsEnabled` parameter, which is used to bypass the proof checks during development, tests still take a long time even with this.
